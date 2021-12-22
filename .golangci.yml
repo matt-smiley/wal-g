@@ -44,10 +44,9 @@ linters:
     - goimports
     - govet
     - ineffassign
-    - interfacer
     - misspell
     - nakedret
-    - scopelint
+    - exportloopref
     - staticcheck
     - structcheck
     - typecheck
@@ -55,27 +54,12 @@ linters:
     - unparam
     - unused
     - varcheck
-    - golint
+    - revive
     - lll
-  # - godox
     - deadcode
     - stylecheck
     - gosimple
     - whitespace
-  # don't enable:
-  # - gosec
-  # - gochecknoinits
-  # - asciicheck
-  # - gochecknoglobals
-  # - gocognit
-  # - godot
-  # - goerr113
-  # - maligned
-  # - nestif
-  # - prealloc
-  # - testpackage
-  # - wsl
-  # - depguard
 
 run:
   timeout: 5m
