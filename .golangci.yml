@@ -17,9 +17,12 @@ linters-settings:
       - experimental
       - opinionated
       - style
-    settings:
-      hugeParam:
-        sizeThreshold: 170 # temporary, default is 80
+    disabled-checks:
+      - hugeParam
+      - rangeValCopy
+    # settings:
+    #   hugeParam:
+    #     sizeThreshold: 170 # temporary, default is 80
   gocyclo:
     min-complexity: 15
   govet:
@@ -38,7 +41,7 @@ linters:
     - dupl
     - errcheck
     - funlen
-    # - gocritic
+    - gocritic
     - gocyclo
     - gofmt
     - goimports
