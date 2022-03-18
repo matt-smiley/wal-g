@@ -48,13 +48,13 @@ linters:
     - nakedret
     - exportloopref
     - staticcheck
-    - structcheck
+    # - structcheck
     - typecheck
     - unconvert
     - unparam
     - unused
     - varcheck
-    - revive
+    # - revive
     - lll
     - deadcode
     - stylecheck
